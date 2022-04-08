@@ -28,5 +28,7 @@ Challenge: Get current data on a cryptocurrency from the list below
 */
 fetch("https://api.coingecko.com/api/documentations/v3/coins/dogecoin")
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => {
+        console.log(data)
+    })
     .catch(err => console.log(err))
